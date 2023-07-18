@@ -2,9 +2,8 @@ import styled from "styled-components";
 import { WithLable } from "../Form";
 
 const SelectWrapper = styled.div`
-  width: ${(props) => props.width || "clamp(250px, 50%, 400px)"};
-  padding: 10px;
-  border: 1px solid red;
+  width: ${(props) => props.width || "100%"};
+
   display: flex;
 
   input {
@@ -15,7 +14,6 @@ const SelectWrapper = styled.div`
 `;
 
 const FormSelect = ({ lable, ...props }) => {
-  console.log("lable", lable);
   const Wrapper = () => (
     <SelectWrapper {...props} className={"select-wrapper"}>
       <input />
